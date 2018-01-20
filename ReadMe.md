@@ -17,7 +17,3 @@ Project Requirements
 	▪ SQLite Database – For keeping track of user and corresponding distance
 
 System Setup - Raspberry Pi is the central piece in this authentication system. Webcam, distance sensor and speakers are connected to the Raspberry Pi. An instance of AWS EC2 server needs to be invoked. The Android device needs to have the application installed.
-
-Getting Started - To build this system, first set up these: Raspberry Pi,a Server and Android Studio
-
-For detailed overview and a detailed version of 'Getting Started' aka 'Do It Yourself', please follow this link: 
