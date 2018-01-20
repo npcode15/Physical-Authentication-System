@@ -1,0 +1,11 @@
+open program.cs.uh.edu
+
+user npandey@program.cs.uh.edu
+
+password 1522324
+
+cd /public_ftp/test
+
+put "W:\pecos-softwareworks\shtml\changes_to_the_windows7_taskbar_you_should_know_about.shtml"
+
+bye

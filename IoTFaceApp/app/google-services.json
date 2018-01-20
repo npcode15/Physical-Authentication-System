@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1030274757269",
+    "firebase_url": "https://iotfaceapp-10913.firebaseio.com",
+    "project_id": "iotfaceapp-10913",
+    "storage_bucket": "iotfaceapp-10913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030274757269:android:b7bcd1a932225486",
+        "android_client_info": {
+          "package_name": "uh.cn.nav.iotfaceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030274757269-ikrfvgh1282cl4g9mapmdaok1ogko83m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uh.cn.nav.iotfaceapp",
+            "certificate_hash": "eef056b035a4ec973309d3f83b8c2dab438f34f6"
+          }
+        },
+        {
+          "client_id": "1030274757269-1p0uo6oq1je9ekkppkoaitq3qnh4mim4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjf4KFFVQUHPvHLu_MqOVobXSV9QsDXiU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030274757269-1p0uo6oq1je9ekkppkoaitq3qnh4mim4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="selection_prompt">Choose a rate</string>
+
+    <string-array name="framerates">
+        <item>4s</item>
+        <item>8s</item>
+        <item>12s</item>
+        <item>16s</item>
+        <item>20s</item>
+    </string-array>
+</resources>

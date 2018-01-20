@@ -1,0 +1,37 @@
+Pi -> user Waves => System gets activated, 
+               	    If the Movement Password matches with someone in the database, camera Captures Live Image, Recognizes the face => image sent to server and app fetches the image.
+																			 (Possibly Push Notification)
+		    If the Movement Password remains unmatched, camera Captures Live Image, Recognizes the face => If matched, plays a Synthesized voice message ("Wrong Password")
+														Max 3 Attempts for password matching in a session (10 Minutes Hold)
+								if Recognition Fails, sends over the live image to server, train the dataset and app fetches it. Meanwhile, Pi prompts unknown identity to register a new password, everytime speaker prompts "Register Now", person needs to place hand somewhere and remember (the distances and pattern).
+
+App -> Identity of the recognised face will be displayed just below the image, with an option to change image refresh rate.
+       If Owner approves => Send update to the file. Pi checks the updated file and plays a Synthesized voice message (either Hello "Name" or "Sorry Permission Denied")
+	
+       For a unrecognised face, instead of Name, display a text field prompting user to enter the name of the person (If known) and either approve or deny access
+
+
+54.236.4.176
+ec2-54-236-4-176.compute-1.amazonaws.com
+
+/var/log/auth.log:
+
+
+As WooJoo stated, you need to tell it a valid server to connect to. If you wanted to use the form $ ssh root@server you can, but you would need to have server as an entry in /etc/hosts or your dns server (which is not the case or you would not have had an error), or an entry in a file called config located typically at /home/username/.ssh/config.
+
+A sample /etc/hosts entry would look like:
+
+# Sample /etc/hosts file
+127.0.0.1    localhost
+127.0.1.1    computerhostnamehere
+
+10.0.2.15    server
+and a sample /home/username/.ssh/config could be as simple as:
+
+Host server
+  HostName 10.0.2.15
+  User root
+This would get you the basic functionality you are looking for. There are many more options available for placing in the ~/.ssh/config file.
+
+See man ssh for more options :)
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/frameRate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/Btn_Reject"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Btn_Accept"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Reject"
+        android:onClick="onClick"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <Button
+        android:id="@+id/Refresh"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Refresh"
+        android:onClick="onClick"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <Button
+        android:id="@+id/Btn_Accept"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Accept"
+        android:onClick="onClick"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/distanceText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:editable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="Last Login: " />
+
+    <EditText
+        android:id="@+id/distanceText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Btn_Reject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:editable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="Distance: " />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/dateText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="textPersonName"
+        android:text="ID : "
+        android:hint="Please type ID If missing or Unknown"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/frametext"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="Refresh Interval" />
+
+    <Spinner
+        android:id="@+id/frameRate"
+        android:layout_width="100dp"
+        android:textAlignment="textEnd"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/frametext"
+        android:layout_alignBottom="@+id/frametext"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:entries="@array/framerates"
+        android:gravity="end" />
+
+</RelativeLayout>
