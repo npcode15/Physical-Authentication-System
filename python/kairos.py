@@ -5,7 +5,7 @@ url = "https://api.kairos.com/enroll"
 
 headers = {
 	    'app_id': '5c6933d9',
-	    'app_key': '673c678af63f93255d6faf0e2a0a9ce1'
+	    'app_key': ''
     }
 
 files = {'image': open('ImgName' + '.jpg', 'rb')}
@@ -32,7 +32,7 @@ print (r)
 # url = "https://api.kairos.com/recognize"
 # headers = {
 #     'app_id': '5c6933d9',
-#     'app_key': '673c678af63f93255d6faf0e2a0a9ce1'
+#     'app_key': ''
 # }
 
 # files = {'image': open('ImgName' + '.jpg', 'rb')}
@@ -49,7 +49,7 @@ print (r)
 # url = "https://api.kairos.com/verify"
 # headers = {
 # 	    'app_id': '5c6933d9',
-# 	    'app_key': '673c678af63f93255d6faf0e2a0a9ce1'
+# 	    'app_key': ''
 #     }
 
 # x = str(3) 
